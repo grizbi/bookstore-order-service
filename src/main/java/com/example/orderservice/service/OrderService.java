@@ -1,5 +1,6 @@
 package com.example.orderservice.service;
 
+import com.example.orderservice.repository.Order;
 import com.example.orderservice.service.model.OrderRequest;
 
 public interface OrderService {
@@ -9,6 +10,6 @@ public interface OrderService {
      *
      * @param orderRequest orderRequest
      */
-    void placeOrder(OrderRequest orderRequest);
+    Order placeOrder(OrderRequest orderRequest);
 
 }
